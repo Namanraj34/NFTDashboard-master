@@ -1,0 +1,44 @@
+.meta-card{
+    margin-left: 250px;
+    width: 700px;
+    margin-top: 120px;
+}
+
+.heading-meta h2{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+.para-meta{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.meta-img-content{
+    
+    border: 2px solid #000;
+    margin-left: 166px;
+    border-radius: 6px;
+    max-width: 448px;
+    width: 100%;
+}
+
+
+.meta-img-para{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.img-meta img{
+    margin-left: 115px;
+    margin-top: -16px;
+    
+}
+
+.rotate-color{
+    background: linear-gradient(135deg, #fff 26%, #000 8%);
+    width: 223px;
+    padding-bottom: 1px;
+}

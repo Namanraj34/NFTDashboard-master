@@ -1,0 +1,214 @@
+app-header{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 4rem;
+  z-index: 2;
+}
+main{
+  position: absolute;
+  width: 1200px;
+  top: 4rem;
+  z-index: 1;
+}
+app-sidenav {
+  position: absolute;
+  left: 0rem;
+  width: 55px;
+  height: calc(100vh - 4rem);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  background-color: rgba(34,34,34,1);
+  border-top: 1px solid white;
+  overflow-x: hidden;
+  white-space: nowrap;
+  transition: width 250ms ease-in;
+}
+.app-sidenav-open{
+  width: 250px;
+}
+.display-area{
+  position: absolute;
+  left: 60px;
+  width: calc(100% - 250px);
+  transition: left 250ms ease-in, width 250ms ease-in;
+}
+.display-area-shrink{
+  width: calc(100% - 250px);
+  left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section#bnr-img {
+  background: url(http://localhost:4200/assets/images/home-banner.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 40px 80px;
+  height: auto;
+  border-radius: 14px;
+}
+
+button.btn-lg.mb-1.btnbnr.fill {
+  background: #fff;
+  color: #000;
+  border: 2px solid #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+button.btn.btn-lg.mb-1.btnbnr {
+  border-radius: 9px;
+  margin: 0 12px 0px 0px;
+  padding: 14px 40px;
+  font-size: 18px;
+}
+
+button.btn.btn-lg.mb-1.btnbnr.unfill {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+button.btn.btn-lg.mb-1.btnbnr {
+  border-radius: 9px;
+  margin: 0 12px 0px 0px;
+  padding: 14px 40px;
+  font-size: 18px;
+}
+
+.bnrcnts p {
+  color: #fff;
+  font-size: 16px;
+  width: 60%;
+  margin: 20px 0 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+section#cstm-nftsec {
+  margin: 39px 0 30px 0;
+}
+
+button.btn.btn-lg.mb-1.btnmore {
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 0;
+  padding: 15px 20px;
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  letter-spacing: 0px;
+  margin: 0 0 20px !important;
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nftbox {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 9px 4px #ccc;
+  padding: 0 0 30px;
+  margin: 0 0 50px 0;
+}
+.nftimg img {
+  width: 100%;
+  position: relative;
+}
+
+button.btn.btn-lg.mb-1.nftbtn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 36%;
+  margin: 77px auto;
+  background: #fff;
+  border: none;
+  color: #000;
+  border-radius: 10px;
+  letter-spacing: 0px;
+  font-size: 19px;
+  padding: 12px 0px;
+}
+
+.nftcnts {
+  padding: 15px 17px 0;
+}
+
+.card {
+  box-shadow: 0px 3px 9px -1px #ccc;
+  padding: 0 0 30px;
+  margin: 0 0 50px 0;
+}
+
+section#cstm-nftsec h4,h4 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+ul.pricecstm {
+  padding: 0px;
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 17px 0 0 0;
+  padding: 0px 0px 7px 0px;
+}
+
+ul.pricecstm li {
+  list-style: none;
+  padding: 5px 2px  0 0;
+  font-size: 20px;
+  width: 50%;
+}
+
+ul.pricecstm li img {
+  margin: 0 11px 0px 0px;
+}
+
+ul.pricecstm li:last-child {
+  text-align: right !important;
+}
+
+
+
+.black {
+  background-color: #24344a!important;
+}
+
+.white {
+  background-color: #fff!important;
+}
+
+
+
+.trans {
+  background-color: transparent!important;
+}
+
+.black-t {
+  color: #24344a!important;
+}
+
+.white-t {
+  color: #fff!important;
+}
+
+.border {
+  border-color: #fff!important;
+}
+
+.theme-changer{
+  border-radius: 50px;
+   background-color: #fff!important;
+  color: #24344a!important;
+}

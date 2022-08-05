@@ -1,0 +1,79 @@
+.navbar-expand{
+  background-color: #fff!important;
+  text-align: center;
+  padding: 42px;
+}
+nav{
+  height: 100%;
+}
+
+.fa-solid, .fas {
+  color: #bfbfbf;
+}
+.side-nav-button{
+  margin-left: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.side-nav-button:hover{
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 30%;
+}
+.nft-logo{
+  width: 20%;
+
+}
+
+.user{
+  font-size: 14px;
+}
+.user-image{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.user-image-icon{
+  height: 18px;
+  font-size:16px;
+}
+img.user-img.dropdown-toggle {
+  width: 45px;
+  border-radius: 50px;
+}
+.fa-bell:before {
+  content: "\f0f3";
+  color: #fff;
+  font-size: 25px;
+}
+h6.mx-2 {
+  text-align: center;
+}
+
+.form-head{
+  margin-left: 25px;
+}
+
+.form-class{
+    width: 417px;
+    height: 50px;
+}
+
+
+.image-icon{
+  width: 25px;
+}
+
+h3.nameadmin {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0px 0 27px;
+}
+
+
+.profile-logo{
+  margin: 0px 22px 0px 50px;
+}
