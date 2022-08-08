@@ -1,0 +1,40 @@
+<div class="container-fuild">
+    <div class="container mt-5">
+        <main>
+
+
+            <section id="cstm-nftsec" class="cstm-nftsec">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                        <h4>List of own NFTs</h4>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                        <button type="button" class="btn btn-lg mb-1  btnmore">View
+                            More</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-md-4 col-xs-12" *ngFor="let main of mainSection">
+                        <div class="card">
+                            <div class="card-img">
+                                <img [src]="main.img" alt="nft-1" class="w-100">
+                                <button type="button" class="btn  btn-lg mb-1 nftbtn">{{main.button}}
+                                </button>
+                            </div>
+
+                            <div class="nftcnts">
+                                <h4>{{main.titles}}</h4>
+                                <ul class="pricecstm">
+                                    <li>{{main.currentP}}</li>
+                                    <li><img [src]="main.imgETH" alt="nft-1">{{main.price}} ETH</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</div>

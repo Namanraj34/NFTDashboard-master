@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute, Router } from '@angular/router';
 
-import { FormControl, FormGroup, Validator, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-create-nft',
@@ -12,19 +13,30 @@ import { FormControl, FormGroup, Validator, Validators } from '@angular/forms';
 export class CreateNftComponent implements OnInit {
   ngOnInit(): void {}
 
-  // Add Price Start
+  fileName: any;
+  hashID: any;
+  discpt: any;
+  attRib: any;
 
-  list: any[] = [];
-
-  addTask(item: string) {
-    this.list.push({ id: this.list.length, name: item });
+  mintNFt() {
+    if (
+      this.fileName == '' ||
+      (this.fileName == null && this.hashID == '') ||
+      (this.hashID == null && this.discpt == '') ||
+      (this.discpt == null && this.attRib == '') ||
+      this.attRib == null
+    ) {
+      alert('Enter Name');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You did not fill the all field!',
+        footer: '<a href="">Why do I have this issue?</a>',
+      });
+    } else {
+      this.router.navigateByUrl('/seller-item');
+    }
   }
-
-  removeTask(id: number) {
-    this.list = this.list.filter((item) => item.id !== id);
-  }
-
-  // Add Price end
 
   file: any;
 
@@ -36,7 +48,11 @@ export class CreateNftComponent implements OnInit {
 
   users: any = [];
 
-  constructor(private userData: SellerService, private http: HttpClient) {
+  constructor(
+    private userData: SellerService,
+    private http: HttpClient,
+    private router: Router
+  ) {
     userData.users().subscribe((data) => {
       console.warn('data', data);
       // this.users = data;

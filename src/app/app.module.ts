@@ -11,6 +11,7 @@ import { CreateNftComponent } from './create-nft/create-nft.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
+import { SellerItemComponent } from './seller-item/seller-item.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     MetaverseWalletComponent,
     CreateNftComponent,
+    SellerItemComponent,
   ],
 
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],

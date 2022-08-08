@@ -43,14 +43,14 @@
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="lable">File Name</label>
                                 <input type="text" class="form-control" id="exampleInputName"
-                                    placeholder="Enter Your Name">
+                                    placeholder="Enter Your Name" [(ngModel)]="fileName">
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="lable">File Hash</label>
                                 <input type="text" class="form-control" id="exampleInputName"
-                                    placeholder="Enter Your Name">
+                                    placeholder="Enter Your Name" [(ngModel)]="hashID">
                             </div>
                         </div>
 
@@ -60,20 +60,22 @@
                         <div class="col-md-12 col-lg-6 mt-2">
                             <div class="mb-3 mt-5">
                                 <label for="exampleInputPassword1" class="lable"></label>
-                                <textarea name="" id="" cols="40" rows="2" placeholder="Description"></textarea>
+                                <textarea name="" id="" cols="40" rows="2" placeholder="Description"
+                                    [(ngModel)]="discpt"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="lable">Attributes </label>
                                 <input type="text" class="form-control" id="exampleInputName"
-                                    placeholder="Enter Your Name">
+                                    placeholder="Enter Your Name" [(ngModel)]="attRib">
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3 text-center">
-                        <button class="cancel-btn">Cancel</button> <button class="create-btn">Mint NFT</button>
+                        <button class="cancel-btn">Cancel</button> <button class="create-btn" routerLink="/seller-item"
+                            (click)="mintNFt()">Mint NFT</button>
                     </div>
                 </div>
 
@@ -83,7 +85,7 @@
                 <p class="lable" *ngIf="file">preview of your file</p>
                 <p *ngIf="file"><img src="assets/images/{{file.name}}" alt="preview image"></p>
 
-                <div class="container text-center pt-2">
+                <!-- <div class="container text-center pt-2">
                     <h2 class="text-center"> Todo List</h2>
                     <p *ngFor="let item of list">{{item.name}} <button class="btn btn-success"
                             (click)="removeTask(item.id)">Remove
@@ -92,14 +94,9 @@
 
 
                     <button class="form-control btn btn-success mt-3" (click)="addTask(task.value)">Add task</button>
-                    <!-- 
-                    <ul *ngFor="let item of list">
-                        <li>{{item.name}} <button class="btn btn-success" (click)="removeTask(item.id)">Remove
-                                Task</button>
-                        </li>
-                    </ul> -->
+            
 
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
